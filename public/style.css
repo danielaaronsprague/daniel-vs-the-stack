@@ -1,12 +1,45 @@
 * {
   box-sizing: border-box;
 }
+body {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9x);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
 body {
   height: 100vh;
   width: 100vw;
-  position: relative;
-  background-color: white;
+  margin: 0px;
+}
+#app {
+  height: 100vh;
+  width: 100vw;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 h1 {
@@ -37,24 +70,18 @@ a:active {
   color: inherit;
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #title {
   display: flex;
-  justify-content: center;
-  margin-top: 10em;
-  margin-bottom: 10em;
   color: #000;
+  margin-bottom: 10em;
+  margin-top: 5em;
 }
 
 #stick-daniel {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
   /* width: auto;
   height: 200px;
   background-image: url("./landing.png");
