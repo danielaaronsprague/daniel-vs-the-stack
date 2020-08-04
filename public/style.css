@@ -6,11 +6,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
+  background-color: white;
 }
 
 h1 {
@@ -22,6 +18,15 @@ h1 {
     1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc,
     3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc,
     5px 6px 1px #eee, 7px 6px 1px #ccc;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  /* font: bold 7vw Sans-Serif; */
+  font-weight: bolder;
+  font-family: sans-serif;
+  font-size: max(4vw, 10px);
+  text-shadow: 0 1px 0 rgb(255, 255, 255);
 }
 
 a,
@@ -33,38 +38,40 @@ a:active {
 }
 
 .app {
-  height: 100vh;
-  width: 100vw;
-  /* background-image: url("./landing.png"); */
-  background-position: center;
-  background-size: 75vw;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #title {
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  padding: 1em;
-  margin-bottom: 1em;
+  margin-top: 10em;
+  margin-bottom: 10em;
   color: #000;
-  position: fixed;
 }
+
+#stick-daniel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: auto;
+  height: 200px;
+  background-image: url("./landing.png");
+  background-repeat: no-repeat; */
+}
+/* #daniel,
+#home,
+#the-stack {
+  pointer-events: all;
+} */
 
 #daniel:hover {
   color: pink;
   -webkit-transform: scale(0.95);
   -ms-transform: scale(0.95);
   transform: scale(0.95);
-}
-
-#the-stack {
-  display: flex;
-  flex-direction: row;
+  transition: all 300ms;
 }
 
 #the-stack:hover {
@@ -72,4 +79,52 @@ a:active {
   -webkit-transform: scale(0.95);
   -ms-transform: scale(0.95);
   transform: scale(0.95);
+  transition: all 300ms;
+}
+
+#stack {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.stack-item {
+  display: flex;
+}
+
+#home h1#vs {
+  display: flex;
+}
+#home:hover h1#vs {
+  display: none;
+}
+#home h1#secret-home {
+  display: none;
+}
+#home:hover h1#secret-home {
+  display: flex;
+}
+
+#home:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+/* #home:hover ~ #the-stack {
+  opacity: 0;
+}
+
+#home:hover + #title {
+  opacity: 0;
+  transition: all 200ms;
+} */
+
+#title:hover > .title-item {
+  opacity: 0;
+}
+#title:hover .title-item:hover {
+  opacity: 1;
 }

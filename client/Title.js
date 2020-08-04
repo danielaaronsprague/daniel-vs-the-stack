@@ -1,26 +1,22 @@
 import React from "react";
+import { A } from "hookrouter";
 
 export default function Title() {
   return (
     <div id='title'>
-      <header>
-        <a href='/' id='daniel'>
-          <div>
-            <h1>daniel</h1>
-          </div>
-        </a>
+      <A href='/daniel' id='daniel' className='title-item'>
+        <h1>daniel</h1>
+      </A>
+      <A href='/' id='home' className='title-item'>
+        <h1 id='vs'>Vs</h1>
+        <h1 id='secret-home'>Home</h1>
+      </A>
 
-        <h1>Vs</h1>
-
-        <a href='/' id='the-stack'>
-          <div>
-            <h1>The</h1>
-          </div>
-          <div>
-            <h1>Stack</h1>
-          </div>
-        </a>
-      </header>
+      <A href='/stack' id='the-stack' className='title-item'>
+        <div>
+          <h1>TheStack</h1>
+        </div>
+      </A>
     </div>
   );
 }
