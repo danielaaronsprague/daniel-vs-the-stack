@@ -3,3 +3,6 @@ public/bundle.js
 public/bundle.js.map
 .DS_Store
 npm-debug.log
+server.crt
+server.csr
+server.key
