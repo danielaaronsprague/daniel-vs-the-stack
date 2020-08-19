@@ -27,7 +27,7 @@ const App = () => {
         <img
           src='/construct.jpg'
           alt='under construction'
-          width='10%'
+          width='20%'
           height='auto'
         ></img>
         {routeResult || <h1>Page Not Found</h1>}
