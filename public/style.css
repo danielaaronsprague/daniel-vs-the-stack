@@ -4,30 +4,42 @@
 
 body {
   color: rgb(243, 243, 243);
-  background-color: rgb(58, 58, 58);
   font-family: sans-serif;
   height: 100vh;
   width: 100vw;
-  margin: 0px;
+  margin: 0;
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  background-color: rgb(16, 16, 16);
+  background-image: url("./dark-denim-3.png");
+  /* background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 6px 6px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 6px 7px;
+  background-color: #242424;
+  background-size: 12px 12px; */
+  /* background-color: #222;
+  background-image: linear-gradient(
+      45deg,
+      transparent 20%,
+      black 25%,
+      transparent 25%
+    ),
+    linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
+    linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+    radial-gradient(black 1px, transparent 0);
+  background-size: 15px 15px, 15px 15px; */
 }
 p {
   font-size: 1em;
   padding-left: 3em;
   padding-right: 3em;
 }
-#app {
-  height: 100vh;
-  width: 100vw;
-}
 .app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
 }
 
 h1 {
@@ -50,36 +62,49 @@ a,
 a:hover,
 a:focus,
 a:active {
+  background-image: url("./dark-denim-3.png");
   text-decoration: none;
   color: inherit;
 }
 
-a,
-a:focus,
-a:active {
+a {
+  background-color: rgb(58, 58, 58);
   border: 2px solid black;
-  box-shadow: 1px 1px 0px rgb(70, 0, 0), 2px 2px 0px rgb(114, 0, 0),
-    3px 3px 0px rgb(187, 0, 0), 4px 4px 0px rgb(219, 0, 0),
-    5px 5px 0px rgb(236, 0, 0), 6px 6px 0px rgb(255, 0, 0);
+  box-shadow: 1px 1px 0px rgb(0, 74, 63), 2px 2px 0px rgb(0, 120, 102),
+    3px 3px 0px rgb(0, 174, 148), 4px 4px 0px rgb(0, 218, 185),
+    5px 5px 0px rgb(0, 255, 217), 6px 6px 0px rgb(0, 255, 217);
+  border-radius: 3px;
 }
 
-a:hover {
+a:hover,
+a:focus,
+a:active {
   transition: all 300ms;
   box-shadow: none;
-  border: 2px solid rgb(58, 58, 58);
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  background-color: rgb(36, 36, 36);
 }
 
 #title {
+  color: black;
+  background-color: rgb(36, 36, 36);
+  background-image: url("./dark-denim-3.png");
+  /* background-color: rgb(58, 58, 58); */
   display: flex;
-  margin-bottom: 3em;
   width: 100vw;
-  height: 150px;
+  height: 7.5em;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  padding-top: 10px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .title-item {
+  margin-left: 8px;
 }
 
 @keyframes fadeInAnimation {
@@ -106,19 +131,20 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 24px;
-  padding-right: 2em;
-  padding-left: 2em;
+  margin-bottom: 16px;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 #outer-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70px;
+  width: 86px;
 }
 
 #outer-links a {
+  background-color: rgb(36, 36, 36);
   border: none;
   box-shadow: none;
   color: inherit;
@@ -128,10 +154,10 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
-  padding-right: 2em;
-  padding-left: 2em;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 #stick-daniel {
@@ -142,14 +168,15 @@ a:hover {
 #home-link {
   font-size: min(8vw, 2em, 4rem);
 }
-
-.nav-item:hover {
+/* .nav-item:hover,
+.nav-item:focus,
+.nav-item:active {
   color: #00ff00;
   -webkit-transform: scale(0.95);
   -ms-transform: scale(0.95);
   transform: scale(0.95);
   transition: all 300ms;
-}
+} */
 
 /* #daniel:hover {
   color: rgb(255, 160, 176);
@@ -160,14 +187,16 @@ a:hover {
 } */
 
 #content {
+  background-image: url("./dark-denim-3.png");
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 95vw;
   margin-bottom: 30px;
+  margin-top: 30px;
   padding: 30px;
   border: rgb(0, 0, 0) solid 2px;
-  border-radius: 2px;
+  border-radius: 3px;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
