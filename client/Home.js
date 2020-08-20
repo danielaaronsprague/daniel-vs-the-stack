@@ -8,13 +8,13 @@ export default function Home() {
       <img
         id='stick-daniel'
         className='title-item'
-        src='/danielvsthestack.svg'
+        src='/danielvsthestack-black.svg'
         alt='Daniel vs the stack'
       ></img>
       <p>
-        Here lies the portfolio site of my engineering youth! As you can see
-        things are still under construction around here but feel free to poke
-        around!
+        Here lies the portfolio site of my engineering youth!
+        <br /> As you can see things are still under construction around here
+        but feel free to poke around!
       </p>
     </div>
   );

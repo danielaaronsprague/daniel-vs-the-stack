@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Bungee", cursive;
 }
 
 body {
@@ -32,9 +33,11 @@ body {
   background-size: 15px 15px, 15px 15px; */
 }
 p {
-  font-size: 1em;
-  padding-left: 3em;
-  padding-right: 3em;
+  font-size: 1.4em;
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(0, 255, 217);
+  font-weight: 100;
 }
 .app {
   display: flex;
@@ -51,11 +54,15 @@ h1 {
   margin-right: 3px;
 }
 h2 {
-  font-size: min(4vw, 2em, 2rem);
+  font-size: min(2.4vw, 2em, 2rem);
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 3px;
   margin-right: 3px;
+}
+h3 {
+  margin: 0;
+  font-size: 1.5em;
 }
 
 a,
@@ -68,7 +75,7 @@ a:active {
 }
 
 a {
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(90, 90, 90);
   border: 2px solid black;
   box-shadow: 1px 1px 0px rgb(0, 74, 63), 2px 2px 0px rgb(0, 120, 102),
     3px 3px 0px rgb(0, 174, 148), 4px 4px 0px rgb(0, 218, 185),
@@ -84,13 +91,13 @@ a:active {
   -webkit-transform: scale(0.95);
   -ms-transform: scale(0.95);
   transform: scale(0.95);
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(65, 65, 65);
 }
 
 #title {
   margin-top: 10px;
   color: black;
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(65, 65, 65);
   background-image: url("./dark-denim-3.png");
   /* background-color: rgb(58, 58, 58); */
   display: flex;
@@ -144,7 +151,7 @@ a:active {
 }
 
 #outer-links a {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(65, 65, 65);
   border: none;
   box-shadow: none;
   color: inherit;
@@ -163,6 +170,10 @@ a:active {
 #stick-daniel {
   height: auto;
   width: 80%;
+}
+#intel {
+  height: auto;
+  width: 50%;
 }
 
 #home-link {
@@ -200,7 +211,12 @@ a:active {
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(65, 65, 65);
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 75vh;
+  position: absolute bottom;
+  /* position: fixed; */
 }
 
 #home,
@@ -212,7 +228,6 @@ a:active {
 }
 
 #stack {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
