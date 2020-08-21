@@ -5,7 +5,7 @@ export default function Stack() {
     <div id='daniel'>
       <h1>Daniel (he/him)</h1>
       <p>
-        Ok lets start at the beginning, remember these guys?
+        Ok lets start at the beginning, remember these Intel Engineers?
         <br />
         <br />
         <img

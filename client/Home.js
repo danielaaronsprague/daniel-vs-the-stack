@@ -8,7 +8,7 @@ export default function Home() {
       <img
         id='stick-daniel'
         className='title-item'
-        src='/danielvsthestack-black.svg'
+        src='/danielvsthestack-color.svg'
         alt='Daniel vs the stack'
       ></img>
       <p>

@@ -4,7 +4,7 @@
 }
 
 body {
-  color: black;
+  color: #ffa7ca;
   font-family: sans-serif;
   height: 100vh;
   width: 100vw;
@@ -14,23 +14,6 @@ body {
   animation-fill-mode: forwards;
   background-color: rgb(16, 16, 16);
   background-image: url("./dark-denim-3.png");
-  /* background: radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 6px 6px,
-    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 6px 7px;
-  background-color: #242424;
-  background-size: 12px 12px; */
-  /* background-color: #222;
-  background-image: linear-gradient(
-      45deg,
-      transparent 20%,
-      black 25%,
-      transparent 25%
-    ),
-    linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
-    linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
-    radial-gradient(black 1px, transparent 0);
-  background-size: 15px 15px, 15px 15px; */
 }
 p {
   font-size: 1.4em;
@@ -52,17 +35,20 @@ h1 {
   padding: 0;
   margin-left: 3px;
   margin-right: 3px;
+  color: #ffa7ca;
 }
 h2 {
-  font-size: min(2.4vw, 2em, 2rem);
+  font-size: min(3vw, 2em, 2rem);
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 3px;
   margin-right: 3px;
+  color: #ffa7ca;
 }
 h3 {
   margin: 0;
   font-size: 1.5em;
+  color: #ffa7ca;
 }
 
 a,
@@ -95,14 +81,13 @@ a:active {
 }
 
 #title {
-  margin-top: 10px;
+  margin-top: 30px;
   color: black;
   background-color: rgb(65, 65, 65);
   background-image: url("./dark-denim-3.png");
-  /* background-color: rgb(58, 58, 58); */
   display: flex;
   width: 100vw;
-  height: 6.2em;
+  height: 8em;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
@@ -139,8 +124,14 @@ a:active {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding-right: 2.5%;
-  padding-left: 2.5%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 12px;
+  height: 40px;
+}
+
+#home-link {
+  display: flex;
 }
 
 #outer-links {
@@ -148,13 +139,29 @@ a:active {
   justify-content: space-between;
   align-items: center;
   width: 86px;
+  height: 100%;
+}
+.outer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+path,
+svg {
+  color: #ffa7ca;
 }
 
 #outer-links a {
-  background-color: rgb(65, 65, 65);
-  border: none;
-  box-shadow: none;
-  color: inherit;
+  padding: 2px;
+  height: 100%;
+  width: auto;
+}
+
+#content a {
+  margin-bottom: 15px;
+  width: fit-content;
 }
 
 #nav-container {
@@ -163,7 +170,7 @@ a:active {
   align-items: flex-start;
   justify-content: flex-end;
   width: 100%;
-  padding-right: 2.5%;
+  padding-right: 3%;
   padding-bottom: 12px;
 }
 
@@ -179,23 +186,6 @@ a:active {
 #home-link {
   font-size: min(8vw, 2em, 4rem);
 }
-/* .nav-item:hover,
-.nav-item:focus,
-.nav-item:active {
-  color: #00ff00;
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
-  transition: all 300ms;
-} */
-
-/* #daniel:hover {
-  color: rgb(255, 160, 176);
-}
-
-#the-stack:hover {
-  color: #00ff00;
-} */
 
 #content {
   background-image: url("./dark-denim-3.png");
@@ -220,19 +210,34 @@ a:active {
 }
 
 #home,
-#daniel {
+#daniel,
+#stack,
+#projects {
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#stack {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
 }
 
 .stack-item {
   display: flex;
+}
+
+.one-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  border: rgb(0, 0, 0) solid 2px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  background-color: rgb(16, 16, 16);
+  background-image: url("./dark-denim-3.png");
+  padding: 2em;
 }
