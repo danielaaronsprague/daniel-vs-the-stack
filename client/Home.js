@@ -11,6 +11,12 @@ export default function Home() {
         src='/danielvsthestack-color.svg'
         alt='Daniel vs the stack'
       ></img>
+      <img
+        src='/construct.jpg'
+        alt='under construction'
+        width='20%'
+        height='auto'
+      ></img>
       <p>
         Here lies the portfolio site of my engineering youth!
         <br /> As you can see things are still under construction around here

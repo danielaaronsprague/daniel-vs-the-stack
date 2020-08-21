@@ -29,7 +29,7 @@ p {
 }
 
 h1 {
-  font-size: min(4vw, 2em, 2rem);
+  font-size: min(5vw, 2em, 2rem);
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -240,4 +240,5 @@ svg {
   background-color: rgb(16, 16, 16);
   background-image: url("./dark-denim-3.png");
   padding: 2em;
+  width: 80%;
 }

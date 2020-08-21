@@ -10,15 +10,7 @@ const App = () => {
     <div className='app'>
       <Title />
 
-      <div id='content'>
-        {/* <img
-          src='/construct.jpg'
-          alt='under construction'
-          width='20%'
-          height='auto'
-        ></img> */}
-        {routeResult || <h1>Page Not Found</h1>}
-      </div>
+      <div id='content'>{routeResult || <h1>Page Not Found</h1>}</div>
     </div>
   );
 };
