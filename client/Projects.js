@@ -10,7 +10,7 @@ export default function Projects() {
           rel='noopener'
           target='_blank'
         >
-          Capstone Project: Siq Beets
+          siqBeets
         </a>
         <p style={{ fontSize: "15px", textAlign: "left", margin: "0" }}>
           // Full Stack Engineer <br />
@@ -26,7 +26,7 @@ export default function Projects() {
           rel='noopener'
           target='_blank'
         >
-          This Website
+          thisWebsite
         </a>
         <p style={{ fontSize: "15px", textAlign: "left", margin: "0" }}>
           // Full Stack Engineer
