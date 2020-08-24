@@ -18,9 +18,9 @@ export default function Home() {
         height='auto'
       ></img>
       <p>
-        Here lies the portfolio site of my engineering youth!
-        <br /> As you can see things are still under construction around here
-        but feel free to poke around!
+        Here lies the portfolio site of my engineering youth! As you can see
+        things are still under construction around here but feel free to poke
+        around!
       </p>
     </div>
   );
