@@ -7,6 +7,8 @@ const http2 = require("http2");
 const fs = require("fs");
 const mime = require("mime");
 const compression = require("compression");
+const fallback = require("express-history-api-fallback");
+const root = `${__dirname}/public`;
 
 const {
   HTTP2_HEADER_PATH,
@@ -23,6 +25,8 @@ app.use(compression());
 // Serve up static files
 app.use(express.static(path.join(__dirname, ".", "node_modules")));
 app.use(express.static(path.join(__dirname, ".", "public")));
+app.use(express.static(root));
+app.use(fallback("index.html", { root }));
 
 // Parse incoming requests
 app.use(express.json());
