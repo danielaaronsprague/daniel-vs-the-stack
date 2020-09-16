@@ -2,7 +2,7 @@
 const path = require("path");
 
 module.exports = {
-  mode: isDev ? "development" : "production",
+  mode: "production",
   entry: [
     "@babel/polyfill", // enables async-await
     "./client/index.js",
