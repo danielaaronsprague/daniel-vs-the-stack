@@ -9,13 +9,9 @@ const CompressionPlugin = require("compression-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
-  mode: debug ? "development" : "production",
-  entry: [
-    "@babel/polyfill", // enables async-await
-    "./client/index.js",
-  ],
+  entry: "./client/index.js",
   output: {
-    publicPath: "/public",
+    publicPath: "./public",
     path: path.join(__dirname, "public"),
     filename: "js/[name].bundle.min.js",
     chunkFilename: "js/[name].bundle.js",
@@ -108,7 +104,7 @@ module.exports = {
           // Options similar to the same options in webpackOptions.output
           // both options are optional
           filename: "style.css",
-          chunkFilename: "[id].css",
+          chunkFilename: "idk.css",
         }),
         new webpack.LoaderOptionsPlugin({
           minimize: true,
@@ -116,10 +112,10 @@ module.exports = {
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
         new HtmlWebpackPlugin({
           template: "./public/index.html",
-          // minify: {
-          //   collapseWhitespace: true,
-          //   removeAttributeQuotes: false
-          // }
+          minify: {
+            collapseWhitespace: true,
+            removeAttributeQuotes: false,
+          },
         }),
         new CompressionPlugin({
           test: /\.(html|css|js|gif|svg|ico|woff|ttf|eot)$/,
