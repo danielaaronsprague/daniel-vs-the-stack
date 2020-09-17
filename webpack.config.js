@@ -9,7 +9,11 @@ const CompressionPlugin = require("compression-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
-  entry: "./client/index.js",
+  mode: debug ? "development" : "production",
+  entry: [
+    "@babel/polyfill", // enables async-await
+    "./client/index.js",
+  ],
   output: {
     publicPath: "./public",
     path: path.join(__dirname, "public"),
