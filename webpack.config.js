@@ -13,8 +13,8 @@ module.exports = {
   output: {
     publicPath: "./public",
     path: path.join(__dirname),
-    filename: "js/[name].bundle.min.js",
-    chunkFilename: "js/[name].bundle.js",
+    filename: "./public/[name].bundle.min.js",
+    chunkFilename: "./public/[name].bundle.js",
   },
   devtool: debug ? "cheap-module-eval-source-map" : false,
   resolve: {
