@@ -12,7 +12,7 @@ module.exports = {
   entry: "./client/index.js",
   output: {
     publicPath: "./public",
-    path: path.join(__dirname, "build"),
+    path: path.join(__dirname, "public"),
     filename: "js/[name].bundle.min.js",
     chunkFilename: "js/[name].bundle.js",
   },
