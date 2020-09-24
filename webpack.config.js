@@ -11,10 +11,10 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   entry: "./client/index.js",
   output: {
-    publicPath: "./public",
     path: path.join(__dirname),
     filename: "./public/[name].bundle.min.js",
     chunkFilename: "./public/[name].bundle.js",
+    publicPath: "/",
   },
   devtool: debug ? "cheap-module-eval-source-map" : false,
   resolve: {
